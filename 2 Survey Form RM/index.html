@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form RM</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>  
+  <div id="form">
+    <p id="description">How can we improve our football club!</p>
+    <form action="#" id="survey-form" method="GET">
+      <div>
+        <div class="labels">
+          <label for="name" id="name-label">* Name: </label>
+        </div>
+        <div class="answer">
+          <input class="input" id="name" type="text" placeholder="Enter your Name" name="name" required autofocus>
+        </div>
+      </div>
+      <div>
+        <div class="labels">
+          <label for="email" id="email-label">* Email: </label>
+        </div>
+        <div class="answer">
+          <input class="input" id="email" type="email" placeholder="Enter your Email" name="email" required>
+        </div>
+      </div>
+      <div>
+        <div class="labels">
+          <label for="number" id="number-label">* Age: </label>
+        </div>
+        <div class="answer">
+          <input class="input" id="number" type="number" min="1" max="77" placeholder="Enter your Age" name="age" required>
+        </div>
+      </div>
+      <div>
+        <div class="labels">
+          <label for="dropdown">Which option best describes your current role?</label> 
+        </div>
+        <div class="answer">
+          <select id="dropdown">
+            <option value="" disabled>Please choose an option</option>
+            <option value="student">Student</option>
+            <option value="engineer">Engineer</option>
+            <option value="footballer">Footballer</option>
+            <option value="member">Club Member</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <div class="labels">
+          <label>Which kit should be away kit</label>
+        </div>
+        <div class="answer">
+          <ul style="list-style: none">
+            <li><label for="one"><input name="radio-buttons" id="one" value="0" type="radio" checked>Orange</label></li>
+            <li><label for="two"><input name="radio-buttons" id="two" value="1" type="radio">Blue</label></li>
+            <li><label for="three"><input name="radio-buttons" id="three" value="2" type="radio">Black</label></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div  class="labels">
+          <label for="checkbox">Things that should be improved</label>
+        </div>
+        <div class="answer">
+          <ul id="checkbox" style="list-style: none">
+            <li><label class="container" for="a">Training Ground
+              <input id="a" type="checkbox" value="1">
+              <span class="checkmark"></span>
+            </label></li>
+            <li><label class="container" for="b">Stadium
+              <input id="b" type="checkbox" value="2"><span class="checkmark"></span>
+            </label></li>
+            <li><label class="container" for="c">Training Kit
+              <input id="c" type="checkbox" value="3"><span class="checkmark"></span>
+            </label></li>
+            <li><label class="container" for="d">Marketing
+              <input id="d" type="checkbox" value="4"><span class="checkmark"></span>
+            </label></li>
+            <li><label class="container" for="e">Staff
+              <input id="e" type="checkbox" value="5"><span class="checkmark"></span>
+            </label></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="labels">
+          <label for="textarea">Any Suggestions</label>
+        </div>
+        <div class="answer">
+          <textarea class="input" name="Suggestions" id="textarea" placeholder="Enter here...." style="height: 60px;"></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <footer class="bottom">
+      <p>Designed and Coded with &#10084; by <a href="https://www.freecodecamp.org/ashwin7" target="_blank" style="color:black;">Ashwin</a></p>
+      <p>&copy; Ashwin, 2018</p>
+  </footer>
+</body>
+</html>

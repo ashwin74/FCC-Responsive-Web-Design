@@ -1,0 +1,158 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  min-width: 350px;
+  background: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
+}
+#title {
+  font-size: 45px;
+  margin: 4%;
+}
+#description {
+  font-size: 27px;
+}
+#form {
+  background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding-top: 20px;
+  width: 80%;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 900px;
+  font-size: 18px;
+}
+.labels {
+  text-align: right;
+  padding: 5px;
+  margin-top: 10px;
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+.answer {
+  text-align: left;
+  width: 48%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.input {
+  height: 20px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #f7f4f4;
+}
+#submit {
+  background-color: #59ace0;
+  border-radius: 10px;
+  color: white;
+  font-size: 21px;
+  height: 50px;
+  width: 100px;
+  border: none;
+  margin: 10px;
+}
+#dropdown {
+  height: 35px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+  font-size: 15px;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+  border-style: initial;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: rgb(167, 237, 240);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: rgb(14, 129, 223);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5px;
+  top: 3px;
+  width: 2px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+@media screen and (max-width: 833px) {
+  .input {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .answer {
+    width: 80%;
+    float: left;
+  }
+  .input {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
+.bottom {
+  margin: 2%;
+  text-align: center;
+  font-weight: 600;
+}
